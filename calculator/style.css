@@ -1,0 +1,42 @@
+.container{
+    background-color :black;
+    height: 500px;
+    width: 350px;
+    display: flex;
+    align-content: center;
+} 
+.button{
+    background-color: orangered;
+    height: 80px;
+    width: 80px;
+    font-size:x-large;
+    max-lines: 2;
+    border-radius: 10px;
+}
+#text1{
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: medium;
+    height: 50px;
+    width: 310px;
+}
+.mydiv{
+    align-items: center;
+}
+.div1{
+    margin-left: 10px;
+}
+.div2{
+    margin-left: 10px;
+}
+.div3{
+    margin-left: 10px;
+}
+.div4{
+    margin-left: 10px;
+}
+.div5{
+    margin-left: 10px;
+}
