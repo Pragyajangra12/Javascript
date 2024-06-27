@@ -29,6 +29,7 @@ let currentSongIndex = 0;
 const audio = document.getElementById('audio');
 const title = document.getElementById('title');
 const artist = document.getElementById('artist');
+const playButton = document.getElementById('play');
 // const volumeControl = document.getElementById('volume');
 const seekbar = document.getElementById('seekbar');
 
@@ -44,16 +45,14 @@ function playSong() {
 }
 function pauseSong() {
     audio.pause();
-    playButton.textContent = "⏸";
+    playButton.textContent = "▶";
 }
 function togglePlayPause() {
     if (audio.paused) {
         playSong();
-        playButton.textContent = "⏸";
 
     } else {
         pauseSong();
-        playButton.textContent = "";
     }
 }
 
@@ -76,11 +75,11 @@ audio.addEventListener('loadedmetadata', function() {
 audio.addEventListener('timeupdate', function() {
     seekbar.value = audio.currentTime;
 });
-
-// Seek the audio when the seekbar value is changed
 seekbar.addEventListener('input', function() {
     audio.currentTime = seekbar.value;
 });
 
-// Load the first song initially
+audio.addEventListener('ended',function(){
+    nextSong();
+});
 loadSong(songs[currentSongIndex]);
