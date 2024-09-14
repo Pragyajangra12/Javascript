@@ -1,0 +1,77 @@
+#row{
+    height: 300px;
+    border: 1px solid aquamarine;
+    /* display: flex; */
+    width: 400px;
+    max-width: 100%;
+    margin-left: 450px;
+    /* flex-direction: column; */
+    margin-top: 30px;
+} 
+#div2 h1{
+    height: 70px;
+    width: 400px;
+    max-width: 100%;
+    color: beige;
+    margin-left: 450px;
+    justify-content: center;
+    margin-top: 60px;
+    align-items: center;
+    border: 1px solid aquamarine;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    flex-direction: column;
+
+}
+#row #input1{
+    margin-top: 20px;
+    margin-left: 30px;
+    height: 20px;
+    width: 200px;
+}
+#row #btn{
+    height: 25px;
+    width: 70px;
+    padding: 2px;
+    width: 60px;
+    font-size: 13px;
+   
+}
+ul li{
+    color: aqua;
+    list-style: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+#input1 {
+    width: 70px;
+    height: 25px;
+    padding: 2px;
+    font-size: 13px;
+   
+    background-color: #f9f9f9;
+}
+
+#input1:focus {
+    border-color: #007BFF;
+    background-color: #fff;
+    outline: none;
+}
+ul li::after{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 60%;
+    justify-content: space-evenly;
+    background-image: url("/To-do-list/cross.png");
+    background-size:cover ;
+    background-position: center;
+    top: 3px;
+    left: 200px;
+}
+body{
+    background-color: black;
+}

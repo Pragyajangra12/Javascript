@@ -24,6 +24,31 @@ const songs = [
         artist: "Siddhu moosewala",
         src: "song5.mp3"
     },
+    {
+        title: "Same same",
+        artist: "Singa",
+        src: "song6.mp3"
+    },
+    {
+        title: "So high",
+        artist: "Siddhu moosewala",
+        src: "song7.mp3"
+    },
+    {
+        title: "Papa meri jaan",
+        artist: "Sonu nigam",
+        src: "song8.mp3"
+    },
+    {
+        title: "Same beef",
+        artist: "Siddhu moosewala",
+        src: "song9.mp3"
+    },
+    {
+        title: "295",
+        artist: "Siddhu moosewala",
+        src: "song10.mp3"
+    },
 ];
 let currentSongIndex = 0;
 const audio = document.getElementById('audio');
